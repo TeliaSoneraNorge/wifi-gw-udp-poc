@@ -1,0 +1,19 @@
+{
+  "name": "wifi-gw-udp-poc",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "author": "Jeremy Toussaint <jeremy.toussaint@telia.no>",
+  "license": "ISC",
+  "dependencies": {
+    "dgram": "^1.0.1"
+  },
+  "engines": {
+    "node": "8.9.3",
+    "npm": "5.6.0"
+  }
+}
