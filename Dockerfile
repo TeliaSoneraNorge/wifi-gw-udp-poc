@@ -8,7 +8,7 @@ EXPOSE 33333
 RUN mkdir -p /usr/src/app
 WORKDIR /usr/src/app
 
-# Cpy all project to working directory
+# Copy all project to working directory
 COPY . /usr/src/app
 # Set production env variables for npm install
 ENV NODE_ENV production
