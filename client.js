@@ -1,5 +1,5 @@
 var PORT = 33333;
-var HOST = 'x.x.x.x';
+var HOST = '0.0.0.0';
 
 var dgram = require('dgram');
 var message = new Buffer('Data Insights Rocks!');
