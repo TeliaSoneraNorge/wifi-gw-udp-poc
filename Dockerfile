@@ -4,6 +4,9 @@ MAINTAINER Jeremy Toussaint <jeremy.toussaint@telia.no>
 # Expose port
 EXPOSE 33333
 
+#Install PM2 globally
+RUN npm install pm2 -g
+
 # Create app directory
 RUN mkdir -p /usr/src/app
 WORKDIR /usr/src/app
@@ -16,4 +19,4 @@ ENV NODE_ENV production
 RUN npm install
 
 # Docker runtime business - does not execute during build
-CMD ["npm", "start"]
+CMD ["pm2-docker", "index.js"]
